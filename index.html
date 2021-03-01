@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Introducimos esta meta para que funcionen las medias queries 
+    Esto le dirá al navegador que el ancho de la vista debe ser como máximo el ancho del dispositivo, 
+    de esta manera deberíamos evitar tener scroll horizontal en nuestra web -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- para ir a api letra -->
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+  <!-- para poder usar iconos -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="./styles.css" />
+
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <script defer src="./script.js"></script>
+  <script defer src="./list.js"></script>
+  <!-- Para las letras del cuerpo -->
+  <title>Practica</title>
+
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="navbar">
+      <a href="index.html" target="_blank" class="navbar__item">
+        <i class="fas fa-home"></i></a></span>
+      <button class="navbar__item navbar__item--boton" id="toList">Personajes</button>
+
+    </div>
+
+  </header>
+
+  <main id="landing">
+    <div class="updates">
+      <a href="https://rickandmortyapi.com/" target="_blank" class="updates__text">Actualizaciones</a>
+    </div>
+
+    <div class="row">
+      <div class="row__column">
+        Sobre la API:
+        <img class="img" src="./assets/svg/enter.svg" />
+        <P><br>The Rick and Morty API is a RESTful and GraphQL API based on the television show Rick and Morty. You will
+          have access to about hundreds of characters, images, locations and episodes.
+          The Rick and Morty API is filled with canonical information as seen on the TV show.</P>
+        <a href="https://rickandmortyapi.com/about" target="_blank" class="etiqueta">Pulsa y descubre</a>
+      </div>
+      <div class="row__column">
+        Funciones:
+        <img class="img" src="./assets/svg/question.svg" />
+        <P><br>Crea tu lista de personajes favoritos, y añade todos los que quieras a tu gusto
+          Una vez tengas tu coeleccion de personajes pulsa sobre ella y accede a detalles de cada uno.
+        </P>
+        <button class="btn" onclick="showMore()">Saber más</button>
+        <div id="demo" class="hide">¿Estás prepado?¡Adelante pulsa sobre el menú de navegación del principio de la página.</div>
+
+
+      </div>
+      <div class="row__column">
+        Contacto
+        <img class="img" src="./assets/svg/user.svg" />
+        <P><br>+34 91 309 16 41
+
+          jagarcia@minsait.com
+
+          Calle tal cual. 28660 Madrid.+34 XXXXXXXX
+
+          Jorgar268@hotmail.com
+
+          Calle Claudio Coello 25. 28001 Madrid.</P>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ------------------------ -->
+
+  <main class="listapagina" id="secondaryPage">
+    <div class="fotoTitulo"></div>
+    <div class="titulolista">Elige tu personaje favorito</div>
+    <div class="contenedorpersonajes" id="output"></div>
+    <!-- --------------------------------------- -->
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copy">© 2021, España. Todos los derechos reservados.</p>
+    <div class="footer__media">
+      <a href="https://twitter.com/rickandmorty" target="_blank" id="media" class="fab fa-twitter-square"></a>
+      <a href="https://es-la.facebook.com/RickandMorty/" target="_blank" id="media" class="fab fa-facebook-square"></a>
+      <a href="https://www.instagram.com/rickandmorty/?hl=es" target="_blank" id="media" class="fab fa-instagram"></a>
+    </div>
+  </footer>
+  <!-- meter aqui cript -->
+  
+  <script defer src="./detalles.js"></script>
+</body>
+
+</html>

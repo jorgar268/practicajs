@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #dbd3cc;
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  src: url(../webfonts/fa-solid-900.eot);
+}
+
+.fa {
+  font-family: "Font Awesome 5 Free";
+  color: #2a2a2a;
+}
+
+a {
+  text-decoration: none;
+}
+
+#media {
+  color: #979191;
+}
+
+#media:hover {
+  color: #ebb800;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #2a2a2a;
+  overflow: hidden;
+  padding: 12px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__item {
+  float: left;
+  display: block;
+  color: #e4dede;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar__item__item:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 30px;
+}
+
+.navbar__item--boton {
+  background: none;
+  color: #e4dede;
+  border: none;
+}
+
+.navbar__item--boton:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 30px;
+}
+
+.updates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url("./assets/img/update.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.updates__text {
+  font-family: "Bungee Outline", cursive;
+  font-size: 400%;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: aqua;
+  padding: 10px;
+  max-width: 100%;
+  border-radius: 30px;
+}
+
+.updates__text:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.5;
+  color: black;
+}
+
+.updates__text:active {
+  -webkit-transform: scale(O 0.5);
+          transform: scale(O 0.5);
+  color: green;
+}
+
+/*estilo parte central */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Las 3 columnas juntas  */
+}
+
+.row__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px;
+  background-color: #aaa;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+}
+
+.etiqueta {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
+.etiqueta:hover {
+  border-bottom: solid #ebb800;
+}
+
+.img {
+  width: 100%;
+  height: 50vh;
+}
+
+.img:hover {
+  -webkit-filter: invert(0.5) sepia(1);
+          filter: invert(0.5) sepia(1);
+}
+
+.footer {
+  background-color: #2a2a2a;
+  padding: 10px;
+  text-align: center;
+  color: #aaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
+}
+
+.u-temp-border {
+  border: 2px solid red;
+}
+
+@media (max-width: 250px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .updates__text {
+    min-width: 50%;
+    font-size: 100%;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 8px;
+  }
+  .updates__text {
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    padding: 10px;
+    min-width: 50%;
+    border-radius: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-size: 200%;
+    min-height: auto;
+  }
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.btn {
+  color: #fff;
+  background-color: #504f4f;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  border-bottom: solid #ebb800;
+}
+
+.listapagina {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fotoTitulo {
+  height: 50vh;
+  padding: 3px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url("https://vignette.wikia.nocookie.net/inciclopedia/images/0/0c/Rick_y_Morty_logo.png/revision/latest?cb=20180310204110");
+  background-size: contain;
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+}
+
+.titulolista {
+  text-align: center;
+  font-family: "Bungee Outline", cursive;
+  font-size: 400%;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: rgba(53, 85, 228, 0.986);
+  padding: 10px;
+  max-width: 100%;
+  border-radius: 30px;
+}
+
+.titulolista:hover {
+  color: cyan;
+}
+
+.listaPersonajes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2%;
+  max-width: 80%;
+  background-color: #b1aaaa;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.contenedorpersonajes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imgPersonajes:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+/*# sourceMappingURL=styles.css.map */
